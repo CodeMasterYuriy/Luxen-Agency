@@ -1,9 +1,17 @@
-// components/GradientButton.tsx
 import React from "react";
+
+type TailwindTextColor =
+  | "white"
+  | "black"
+  | "gray-500"
+  | "red-500"
+  | "blue-500"
+  | "yellow-500"
+  | "green-500"; // Add more colors as needed
 
 type MainButtonProps = {
   text: string;
-  textColor: string;
+  textColor: TailwindTextColor;
   onClick?: () => void;
   className?: string;
 };
